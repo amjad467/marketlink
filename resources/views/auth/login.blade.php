@@ -201,7 +201,7 @@
             </div>
         @endif
 
-        <form action="{{ route('login') }}" method="POST">
+        <form action="/login" method="POST">
             @csrf
             <div class="form-group">
                 <label class="form-label" for="email">{{ __('ئیمەیڵی بەکارهێنەر') }}</label>
