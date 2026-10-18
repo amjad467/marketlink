@@ -181,9 +181,9 @@
         <p class="login-desc">{{ __('چوونەژوورەوەی پارێزراو بە سیستەمی بازرگانی دەستەجەمعی و فرە-کۆمپانیا') }}</p>
 
         <div style="margin-bottom: 20px;">
-            <a href="{{ route('marketlink.index') }}" style="display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:14px; background:linear-gradient(135deg, #10b981, #059669); color:#fff; font-weight:700; border-radius:12px; text-decoration:none; box-shadow:0 6px 20px rgba(16,185,129,0.35); font-size:14px;">
+            <a href="{{ route('login.demo') }}" style="display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:14px; background:linear-gradient(135deg, #10b981, #059669); color:#fff; font-weight:700; border-radius:12px; text-decoration:none; box-shadow:0 6px 20px rgba(16,185,129,0.35); font-size:14px;">
                 <span>🚀</span>
-                <span>{{ __('چوونەژوورەوەی ڕاستەوخۆ بەبێ وشەی نهێنی (دۆخی کراوە)') }}</span>
+                <span>{{ __('چوونەژوورەوەی ڕاستەوخۆ بەبێ وشەی نهێنی (1-Click Login)') }}</span>
             </a>
         </div>
 

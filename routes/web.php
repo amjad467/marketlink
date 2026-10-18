@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 // Public Routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
+Route::get('/demo-login/{role?}', [LoginController::class, 'demoLogin'])->name('login.demo');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/csrf-token', fn() => response()->json(['token' => csrf_token()]))->name('csrf.token');
 

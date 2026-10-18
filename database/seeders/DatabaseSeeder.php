@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             ['email' => 'admin@marketlink.krd'],
             [
                 'name' => 'Platform Operator Admin (بەڕێوەبەری پلاتفۆرم)',
-                'password' => Hash::make(env('INITIAL_ADMIN_PASSWORD', 'Operator@2026!')),
+                'password' => Hash::make(env('INITIAL_ADMIN_PASSWORD', 'password')),
                 'role' => 'platform_admin',
                 'is_active' => true,
             ]
@@ -90,6 +90,28 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
+        \App\Models\User::firstOrCreate(
+            ['email' => 'supplier_1@marketlink.krd'],
+            [
+                'company_id' => $supplier->id,
+                'name' => 'Apex Wholesale Ltd (دابینکەر)',
+                'password' => Hash::make('password'),
+                'role' => 'owner',
+                'is_active' => true,
+            ]
+        );
+
+        \App\Models\User::firstOrCreate(
+            ['email' => 'driver@marketlink.krd'],
+            [
+                'company_id' => $supplier->id,
+                'name' => 'شۆفێری دابەشکردن و گەیاندن',
+                'password' => Hash::make('password'),
+                'role' => 'driver',
+                'is_active' => true,
+            ]
+        );
+
         // 4. Verified Retailer: Metro Supermarkets
         $retailer = Company::create([
             'name' => 'Metro Supermarkets Chain',
@@ -117,6 +139,17 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        \App\Models\User::firstOrCreate(
+            ['email' => 'retailer_2@marketlink.krd'],
+            [
+                'company_id' => $retailer->id,
+                'name' => 'Metro Supermarkets Chain (مارکێت)',
+                'password' => Hash::make('password'),
+                'role' => 'owner',
+                'is_active' => true,
+            ]
+        );
 
         // 5. Pending KYB Supplier
         $pendingSupplier = Company::create([
