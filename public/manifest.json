@@ -1,0 +1,32 @@
+{
+  "name": "MarketLink B2B - بازاڕی دابەشکردنی کۆمەڵ",
+  "short_name": "MarketLink",
+  "description": "پلاتفۆرمی پێشکەوتووی بازرگانی B2B و بەڕێوەبردنی کاش ڤان و دابەشکردن",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "orientation": "any",
+  "lang": "ku",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
